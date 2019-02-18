@@ -1,7 +1,10 @@
 {
   "name": "HackMe",
   "nativescript": {
-    "id": "org.nativescript.HackMe"
+    "id": "org.nativescript.HackMe",
+    "tns-ios": {
+      "version": "5.2.0"
+    }
   },
   "version": "0.0.0",
   "scripts": {

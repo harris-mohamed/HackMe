@@ -2,12 +2,12 @@
     border-top-color : transparent; 
     border-left-color: transparent; 
     border-right-color: transparent;  
-    border-bottom-color:silver;    
+    border-bottom-color:silver;   
     max-width: 288px;
     max-height: 288px; 
 }
 body{
-    text-align: center; 
+    background:white; 
 }
 h1{
     text-align: center;
@@ -21,7 +21,7 @@ h1{
     height: 50px; 
     text-align: center;
     background: linear-gradient(to bottom right, red,  magenta, #802BB1, lightblue);
-}*/
+}*/ 
 button {
     margin: 2em auto;
     display: block;

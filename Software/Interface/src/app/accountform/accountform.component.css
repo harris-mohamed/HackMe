@@ -3,13 +3,16 @@
     border-left-color: transparent; 
     border-right-color: transparent;  
     border-bottom-color:silver;  */
-    border-radius: 15px;  
+    border-radius: 5px;  
+    max-width: 288px;
+    max-height: 288px; 
 }
 body{
     background:white; 
 }
 h1{
     text-align: center;
+    line-height:1.2px; 
     border-bottom: 2px;
     border-bottom-color: #fa80d2;
 }
@@ -32,9 +35,6 @@ button {
     background-clip: padding-box;
     position: relative;
     color: #fff;
-  }
-  .button:hover{
-    background-position: right center;
   }
   button:before {
     content: "";

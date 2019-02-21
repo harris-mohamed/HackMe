@@ -4,15 +4,22 @@
     border-right-color: transparent;  
     border-bottom-color:silver;    
     max-width: 288px;
-    max-height: 288px; 
+    max-height: 80px; 
 }
 body{
     text-align: center; 
 }
+.form-group {
+  margin-bottom: 0px;
+}
 h1{
+    font-family: 'Montserrat'; 
+    font-size: 22px; 
     text-align: center;
     line-height:1.2px; 
     border-bottom: 2px;
+    margin-top: 230px; 
+    margin-bottom :40px; 
     border-bottom-color: #fa80d2;
 }
 /*.btn-success{

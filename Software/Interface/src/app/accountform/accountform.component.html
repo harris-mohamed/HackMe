@@ -1,14 +1,13 @@
         <div class="container">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
           <div [hidden] = "submitted">
-                <h1> Create An Account</h1>
+                <h1> Create Account</h1>
                 <div align = "center">
                 <form (ngSubmit) = "onSubmit()" #accountForm ="ngForm">
-                    {{diagnostic}}
                   <div class="form-group">
                     <input type="text" class="form-control" id="userid"  placeholder = "Enter Username" required
                     [(ngModel)]="model.userid" name = "userid">
                   </div>
-                  TODO: remove this: {{model.userid}}
                   <div class="form-group">
                     <input type="text" class="form-control" id="password" placeholder = "Enter Password" required
                     [(ngModel)] = "model.password" name = "password">

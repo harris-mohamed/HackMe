@@ -4,11 +4,11 @@ This is the software guide to get started with software development for the Hack
 - Angular 
 - Git 
 
-#SmartPhone 
+# SmartPhone 
 
 On the app store, find and install the NativeScript Playground. This will allow you to debug the app on your device.
 
-#Windows 10
+# Windows 10
 
 First, install Android Studio from the following link: https://developer.android.com/studio/
 
@@ -32,7 +32,7 @@ and carefully monitor the install. There will be several parts where you will ha
 
 and your terminal will tell you if there any issues with your install. 
 
-#Android emulator 
+# Android emulator 
 
 If you don't want to use your smartphone to debug, you can also set up an Android emulator that runs right on your computer. Assuming you've installed Android Studio, open a command prompt terminal with administrator priveleges. 
 
@@ -58,7 +58,7 @@ You can confirm the creation of your Android Virtual Device with
 
 ```tns devices```
 
-#Angular 
+# Angular 
 
 In a command prompt terminal, run 
 
@@ -68,6 +68,6 @@ and then run
 
 ```npm install --save-dev @angular-devkit/build-angular```
 
-#Finished
+# Finished
 
 Congratulations, your system has the tools you need to add to the HackMe project! 

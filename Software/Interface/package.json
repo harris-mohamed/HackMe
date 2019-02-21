@@ -15,7 +15,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "android": "tns run android --bundle",
-    "ios": "tns run ios --bundle"
+    "ios": "tns run ios --bundle",
   },
   "private": true,
   "dependencies": {
@@ -30,6 +30,7 @@
     "@angular/router": "~7.1.0",
     "@types/jquery": "^3.3.29",
     "core-js": "^2.5.4",
+    "faker": "^4.1.0",
     "nativescript-angular": "~7.1.0",
     "nativescript-theme-core": "~1.0.4",
     "reflect-metadata": "~0.1.8",

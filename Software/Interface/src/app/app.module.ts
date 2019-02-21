@@ -7,8 +7,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AccountformComponent } from './accountform/accountform.component';
+import { HttpClientModule } from '@angular/common/http';
 
-
+//npm install -g json-server
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { AccountformComponent } from './accountform/accountform.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,

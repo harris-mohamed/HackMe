@@ -28,6 +28,7 @@
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
+    "@types/jquery": "^3.3.29",
     "core-js": "^2.5.4",
     "nativescript-angular": "~7.1.0",
     "nativescript-theme-core": "~1.0.4",

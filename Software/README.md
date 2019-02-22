@@ -1,5 +1,5 @@
 This is the software guide to get started with software development for the HackMe project. The specifics for Windows and Mac are explained below, but this is a quick list of the software you will need:
-- Android Studio 
+- Android Studio (Not necessary with svdmanager) 
 - NativeScript 
 - Angular 
 - Git 

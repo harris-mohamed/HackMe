@@ -11,8 +11,8 @@ conn = pyodbc.connect(connString)
 
 cursor = conn.cursor()
 
-sql = "INSERT INTO SalesLT.ProductCategory (ParentProductCategoryID, Name) VALUES (?, ?)" 
-val = ("4", "BAKKKKKKA") 
+sql = "INSERT INTO dbo.voltages (CustomerID, Voltage) VALUES (?, ?)" 
+val = (1, 5.0823864) 
 cursor.execute(sql, val) 
 
 conn.commit()

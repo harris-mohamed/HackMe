@@ -12,22 +12,9 @@ import sys
 import os
 from ADS1256_definitions import *
 from pipyadc import ADS1256
-import pyodbc
 
-dsn = 'src' 
-user = 'hacker'
-password = 'gOOns412' 
-database = 'HackIllinoisTest' 
-
-connString = 'DSN={0};UID={1};PWD={2};DATABASE={3};'.format(dsn,user,password,database)
-
-conn = pyodbc.connect(connString)
-cursor = conn.cursor() 
 if not os.path.exists("/dev/spidev0.1"):
     raise IOError("Error: No SPI device. Check settings in /boot/config.txt")
-
-
-
 
 ### START EXAMPLE ###
 ################################################################################
@@ -86,13 +73,8 @@ def do_measurement():
         ### STEP 3: Get data:
         raw_channels = ads.read_sequence(CH_SEQUENCE)
         voltages     = [i * ads.v_per_digit for i in raw_channels]
-        print("Data is " + str(voltages[0]))
-        #sql = "INSERT INTO SalesLT.ProductCategory (ParentProductCategoryID, Name) VALUES (?, ?)"
-        #vol = str(voltages[0])
-        #val = ("4", vol)
-        #cursor.execute(sql, val)
-        #conn.commit() 
-        
+        vol = str(voltages[2])
+        print(vol)
         ### STEP 4: DONE. Have fun!
         #nice_output(raw_channels, voltages)
 

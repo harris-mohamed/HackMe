@@ -17,7 +17,7 @@ cursor = cnxn.cursor()
 
 
 sql = "INSERT INTO SalesLT.ProductCategory (ParentProductCategoryID, Name) VALUES (?, ?)"
-val = ("4", "test") #change parameters to whatever parent product, and product name you want (look at DB for examples for current names)
+val = ("4", "cat food") #change parameters to whatever parent product, and product name you want (look at DB for examples for current names)
 cursor.execute(sql, val)
 
 cnxn.commit()

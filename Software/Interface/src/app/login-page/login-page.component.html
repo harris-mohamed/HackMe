@@ -1,7 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#createaccount.background {
+  background: rgb(23, 42, 75);
+  border: 2px solid rgb(63, 97, 161);
+  /* border-radius: 15px; */
+  padding: 20px;
+}
+
+#createaccount.transbox {
+  margin: 30px;
+  background-color: #d8dce7;
+  border: 1px solid black;
+  border-radius: 15px;
+  opacity: 0.7;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+#createaccount.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+
 <div class="container-fluid">
   <body>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
-  <div [hidden] = "submitted">
+  <div [hidden] = "submitted" id="createaccount">
         <h1> Create Account</h1>
         <div align = "center">
         <form (ngSubmit) = "onSubmit()" #accountForm ="ngForm">

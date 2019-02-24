@@ -1,11 +1,5 @@
 {
-  "name": "HackMe",
-  "nativescript": {
-    "id": "org.nativescript.HackMe",
-    "tns-ios": {
-      "version": "5.2.0"
-    }
-  },
+  "name": "my-first-project",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -13,52 +7,42 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "android": "tns run android --bundle",
-    "ios": "tns run ios --bundle"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~7.1.0",
-    "@angular/common": "~7.1.0",
-    "@angular/compiler": "~7.1.0",
-    "@angular/core": "~7.1.0",
-    "@angular/forms": "~7.1.0",
-    "@angular/http": "~7.1.0",
-    "@angular/platform-browser": "~7.1.0",
-    "@angular/platform-browser-dynamic": "~7.1.0",
-    "@angular/router": "~7.1.0",
-    "@types/jquery": "^3.3.29",
+    "@angular/animations": "~7.2.0",
+    "@angular/common": "~7.2.0",
+    "@angular/compiler": "~7.2.0",
+    "@angular/core": "~7.2.0",
+    "@angular/forms": "~7.2.0",
+    "@angular/platform-browser": "~7.2.0",
+    "@angular/platform-browser-dynamic": "~7.2.0",
+    "@angular/router": "~7.2.0",
     "core-js": "^2.5.4",
-    "faker": "^4.1.0",
-    "nativescript-angular": "~7.1.0",
-    "nativescript-theme-core": "~1.0.4",
-    "reflect-metadata": "~0.1.8",
     "rxjs": "~6.3.3",
-    "tns-core-modules": "~5.1.1",
-    "zone.js": "^0.8.26"
+    "tslib": "^1.9.0",
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.13.2",
-    "@angular/cli": "^7.3.2",
-    "@angular/compiler-cli": "^7.2.5",
-    "@nativescript/schematics": "~0.4.0",
-    "@types/jasmine": "2.8.6",
-    "@types/jasminewd2": "~2.0.3",
+    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular/cli": "~7.3.3",
+    "@angular/compiler-cli": "~7.2.0",
+    "@angular/language-service": "~7.2.0",
     "@types/node": "~8.9.4",
-    "codelyzer": "~4.2.1",
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
+    "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
-    "karma": "^4.0.0",
+    "karma": "~4.0.0",
     "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.0",
-    "karma-jasmine": "~1.1.1",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "nativescript-dev-typescript": "~0.7.0",
-    "nativescript-dev-webpack": "^0.18.0",
-    "protractor": "^5.4.2",
-    "ts-node": "~5.0.1",
-    "tslint": "~5.9.1",
-    "typescript": "~3.1.1"
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.11.0",
+    "typescript": "~3.2.2"
   }
 }

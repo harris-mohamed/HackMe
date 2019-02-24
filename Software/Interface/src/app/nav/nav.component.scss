@@ -1,0 +1,38 @@
+header {
+  background: rgb(46, 69, 104);
+
+  .logo {
+      font-weight: bold;
+  }
+
+  #topbar {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+
+  nav {
+      justify-self: right;
+
+      ul {
+          list-style-type: none;
+          margin: 0; padding: 0;
+
+          li {
+              float: left;
+
+              a {
+                  padding: 1.5em;
+                  text-transform: uppercase;
+                  font-size: .8em;
+
+                  &:hover {
+                      background: rgb(69, 90, 119);
+                  }
+              }
+          }
+      }
+  }
+}

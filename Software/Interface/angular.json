@@ -2,21 +2,22 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "cli": {
-    "defaultCollection": "@nativescript/schematics"
-  },
   "projects": {
-    "HackMe": {
+    "my-first-project": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/HackMe",
+            "outputPath": "dist/my-first-project",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,9 +27,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -46,25 +48,32 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "HackMe:build"
+            "browserTarget": "my-first-project:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "HackMe:build:production"
+              "browserTarget": "my-first-project:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "HackMe:build"
+            "browserTarget": "my-first-project:build"
           }
         },
         "test": {
@@ -75,7 +84,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -98,19 +107,20 @@
         }
       }
     },
-    "HackMe-e2e": {
+    "my-first-project-e2e": {
       "root": "e2e/",
       "projectType": "application",
+      "prefix": "",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "HackMe:serve"
+            "devServerTarget": "my-first-project:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "HackMe:serve:production"
+              "devServerTarget": "my-first-project:serve:production"
             }
           }
         },
@@ -126,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "HackMe"
+  "defaultProject": "my-first-project"
 }

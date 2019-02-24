@@ -1,0 +1,21 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+  border: none;
+  font-size: 30px;
+  font-family: "Titillium Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
+  text-emphasis-color: white;
+  display: inline;
+  align-content: center;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.header {
+    font-size: 65px;
+    text-align: center;
+    font-family: "Titillium Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 1;
+}

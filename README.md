@@ -22,6 +22,7 @@ The fundamental with a wave as small as the electrical ones from the exterior of
 To host our data, we chose to use an Azure database as we get free access to it. The database can be written to and queried very easily, and separates all the data according to whether it is private patient data or part of the open source set. 
 
 # Post-processing 
+**CURRENTLY PORTING MATLAB CODE TO PYTHON**
 This is done through Matlab, using some of their built in models. After post processing is done, the type of wave which was encounted is pushed back to the server. Some of the most common EEG waves:
 - Delta (3 Hz): Most commonly found in deep cycles of sleep. 
 - Theta (3.5 to 7 Hz): Most commonly found in children. Implies an abnormality in the person if they are an adult.

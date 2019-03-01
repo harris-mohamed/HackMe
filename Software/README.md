@@ -1,4 +1,6 @@
-This is the software guide to get started with software development for the HackMe project. The specifics for Windows and Mac are explained below, but this is a quick list of the software you will need:
+This is the software guide to get started with software development for the HackMe project. There are 3 main parts, the Azure database, the Website, and the Raspberry Pi. Look in the respective directories for scripts related to each category. The website/app development details are listed below, as the setup is lengthy. 
+
+The specifics for Windows and Mac are explained below, but this is a quick list of the software you will need:
 - Android Studio (Not necessary with svdmanager) 
 - NativeScript 
 - Angular 

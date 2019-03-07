@@ -16,18 +16,26 @@ The project is split up into several parts: The pre-processing side (Taking the 
 In addition, our project aims to be one of the first offering truly open source, anonymous, very readable EEG-wave data for use in studies or any condition. We had great detail in finding resources to start 
 
 # Pre-processing 
-The fundamental with a wave as small as the electrical ones from the exterior of the brain is how miniscule they are. We began by coming up with a way to accurately read these waves, and here we used an instrumentation amplifier (essentially an operational amplifier, but much better) and a 24-bit ADC (analog-to-digital converter). Due to wiring difficulties, we did not use the instrumentatin amplifier in our final circuit but instead directly hooked it up to the 24-bit ADC. The ADC outputs voltage. It is hooked up to a Raspberry Pi 3, so using python and Wifi, the data can be pushed out very easily.
+The fundamental problem with a wave as small as the electrical ones from the exterior of the brain is how miniscule they are. We began by coming up with a way to accurately read these waves. We used a 24 bit ADC (Analog-to-Digital converter) to accurately read the incoming waves. Once on a microcontroller, these waves can be stored and sent anywhere. For HackIllinois 2019, we had a Raspberry Pi 3 take these signals and upload them to a database. 
 
 # Processing 
 To host our data, we chose to use an Azure database as we get free access to it. The database can be written to and queried very easily, and separates all the data according to whether it is private patient data or part of the open source set. 
 
 # Post-processing 
-**CURRENTLY PORTING MATLAB CODE TO PYTHON**
 This is done through Matlab, using some of their built in models. After post processing is done, the type of wave which was encounted is pushed back to the server. Some of the most common EEG waves:
 - Delta (3 Hz): Most commonly found in deep cycles of sleep. 
 - Theta (3.5 to 7 Hz): Most commonly found in children. Implies an abnormality in the person if they are an adult.
 - Alpha (7.5 to 13 Hz): Most commonly found in people who are relaxing and is eradicated by any deep concentration. 
 - Beta: (14 > Hz): Most commonly found in people who are thinking a lot of thoughts at once.
 
+The code is currently being ported over to Python.
+
 # User integration 
 Of course, the above 3 layers will not be even be seen by the user. The user only interacts through the product by wearing the HackMe beanie and accessing the website. There is a website (built in NativeScript + Angular), an app (support for both Windows and Android), and control of basic devices one might find in a home. 
+
+# Next steps 
+- PCB development: Developing circuitry to handle the signal processing and data upload. The smaller the board, the better. [Mark I currently in development]
+- Post-processing algorithm development: Using machine learning algorithms, mass amounts of data, and advanced signal processing techniques, the goal here is to map raw waveforms to thoughts. [Matlab code being ported over to Python]
+- Database programming: MongoDB research and development to replace the Azure implementation.
+- Front End: Developing an aesthetic and slick interface (website + app) for the user to see their data, as well as adding more functionality. 
+- IoT interface: Finding new and creative ways to apply mapped thoughts to the outside world. [Currently integrating Google Home into the HackMe interface]
